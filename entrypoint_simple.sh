@@ -8,4 +8,3 @@ echo "${1} and ${2} are friends."
 
 
 # bash
-~        
