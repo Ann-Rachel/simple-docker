@@ -12,4 +12,4 @@ RUN apt-get -y update && apt-get install -y \
 
 wget 
 ENTRYPOINT ["/bin/bash"]
-CMD ["testann2"]
+CMD ["script_simple.sh"]
