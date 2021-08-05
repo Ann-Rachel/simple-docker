@@ -1,8 +1,8 @@
 #! /bin/bash
 
-testvar1=$1
-testvar2=$2
+testname1=$1
+testname2=$2
 
-python script_simple.sh $testvar1 $testvar2
+python script_simple.sh $testname1 $testname2
 
 # bash
