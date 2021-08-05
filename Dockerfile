@@ -10,6 +10,6 @@ RUN apt-get -y update && apt-get install -y \
     python3.6-dev \
     python3-pip 
 
-wget https://raw.githubusercontent.com/Ann-Rachel/simple-docker/main/entrypoint_simple.sh
+RUN wget https://raw.githubusercontent.com/Ann-Rachel/simple-docker/main/entrypoint_simple.sh
 ENTRYPOINT ["/bin/bash"]
 CMD ["entrypoint_simple.sh", "name1", "name2"]
