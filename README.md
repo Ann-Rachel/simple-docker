@@ -1,3 +1,5 @@
+# simple docker with ENTRYPOINT and VAR
+
 ## install docker
 https://docs.docker.com/get-docker/
 
@@ -10,15 +12,15 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
-download this project
+ ## download this project
 ```bash
 git clone https://github.com/Ann-Rachel/simple-docker.git
 ```
-build
+## build
 ```bash
 sudo docker build -t simple . -f Dockerfile
 ```
-run
+## run
 ```bash
 sudo docker run -it --rm simple ANNA BEN
 ```
