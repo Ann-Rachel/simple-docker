@@ -1,4 +1,4 @@
-FROM osrf/ros:melodic-desktop-full
+FROM ubuntu:18.04
 SHELL ["/bin/bash","-c"]
 
 RUN apt-get -y update && apt-get install -y \
