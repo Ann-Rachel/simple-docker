@@ -12,4 +12,4 @@ RUN apt-get -y update && apt-get install -y \
 
 wget 
 ENTRYPOINT ["/bin/bash"]
-CMD ["script_simple.sh"]
+CMD ["entrypoint_simple.sh", "name1", "name2"]
