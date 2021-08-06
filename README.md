@@ -16,11 +16,11 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 ```bash
 git clone https://github.com/Ann-Rachel/simple-docker.git
 ```
-## build
+## build with var
 ```bash
-sudo docker build -t simple . -f Dockerfile
+sudo docker build --build-arg name2=Jenny -t simple . -f Dockerfile
 ```
 ## run
 ```bash
-sudo docker run -it --rm simple ANNA BEN
+sudo docker run -it --rm simple
 ```
