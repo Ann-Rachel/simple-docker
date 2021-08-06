@@ -18,21 +18,17 @@ Docker version 20.10.7, build f0df350
 ```bash
 git clone https://github.com/Ann-Rachel/simple-docker.git
 ```
-## build with default var
+## build and run with default var
 ```bash
 sudo docker build -t simple . -f Dockerfile
-sudo docker run simple
+sudo docker run -it --rm simple
 ```
 Output:
 Anna and Ben are friends.
-## build with var
+## build and run with var
 ```bash
 sudo docker build --build-arg name2=Jenny -t simple . -f Dockerfile
-sudo docker run simple
+sudo docker run -it --rm simple
 ```
 Output:
 Anna and Jenny are friends.
-## run
-```bash
-sudo docker run -it --rm simple
-```
