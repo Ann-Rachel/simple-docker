@@ -22,15 +22,16 @@ git clone https://github.com/Ann-Rachel/simple-docker.git
 ```bash
 sudo docker build -t simple . -f Dockerfile
 sudo docker run simple
-Output
-Anna and Ben are friends.
 ```
+Output:
+Anna and Ben are friends.
 ## build with var
 ```bash
 sudo docker build --build-arg name2=Jenny -t simple . -f Dockerfile
 sudo docker run simple
-Anna and Jenny are friends.
 ```
+Output:
+Anna and Jenny are friends.
 ## run
 ```bash
 sudo docker run -it --rm simple
