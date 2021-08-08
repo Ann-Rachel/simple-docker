@@ -1,5 +1,5 @@
-#! /bin/sh
-params = $1
+#! /bin/bash
+params=$1
 echo $params
 
 source /opt/ros/melodic/setup.sh
