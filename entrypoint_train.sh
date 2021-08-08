@@ -30,7 +30,7 @@ screen -S python_training -X logfile screenlog_python_train.log
 screen -S python_training -X log
 sleep 4
 
-screen -dmS roslaunch arena_bringup start_arena_flatland.launch $roslaunch
+screen -dmS roslaunch arena_bringup start_arena_flatland.launch "$roslaunch"
 screen -S python_test -X logfile screenlog_python_test.log
 screen -S python_test -X log
 sleep 4
