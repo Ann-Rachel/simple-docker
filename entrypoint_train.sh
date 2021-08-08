@@ -21,6 +21,7 @@ screen -dmS roslaunch bash -c "source ./docker/ros.sh "$roslaunch""
 screen -S roslaunch -X logfile screenlog_roslaunch.log
 screen -S roslaunch -X log
 sleep 10
+screen -ls
 
 # python scripts/training/train_agent.py --agent MLP_ARENA2D
 
@@ -30,16 +31,4 @@ screen -S python_training -X logfile screenlog_python_train.log
 screen -S python_training -X log
 sleep 4
 
-screen -dmS bash -c "echo "$roslaunch""
-screen -S roslaunch -X logfile screenlog_roslaunch.log
-screen -S roslaunch -X log
-sleep 4
-
-screen -dmS echo "${python_train}"|xargs python /root/catkin_ws/src/arena-rosnav/arena_navigation/arena_local_planner/learning_based/arena_local_planner_drl/scripts/training/train_agent.py
-screen -S python_test -X logfile screenlog_python_test.log
-screen -S python_test -X log
-sleep 4
-
-
-screen -ls
 # bash
