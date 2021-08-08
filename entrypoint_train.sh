@@ -24,11 +24,11 @@ sleep 10
 screen -ls
 
 # python scripts/training/train_agent.py --agent MLP_ARENA2D
-
+bash ./docker/py_train.sh "$python_train"
 #bash ./py_train.sh $trainmode $agent
-screen -dmS python_training bash -c "source ./docker/py_train.sh "$python_train""
-screen -S python_training -X logfile screenlog_python_train.log
-screen -S python_training -X log
-sleep 4
+#screen -dmS python_training bash -c "source ./docker/py_train.sh "$python_train""
+#screen -S python_training -X logfile screenlog_python_train.log
+#screen -S python_training -X log
+#sleep 4
 
 # bash
