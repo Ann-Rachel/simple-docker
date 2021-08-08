@@ -30,7 +30,7 @@ screen -S python_training -X logfile screenlog_python_train.log
 screen -S python_training -X log
 sleep 4
 
-screen -dmS echo "$roslaunch"
+screen -dmS bash -c "echo "$roslaunch""
 screen -S roslaunch -X logfile screenlog_roslaunch.log
 screen -S roslaunch -X log
 sleep 4
